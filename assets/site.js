@@ -1,5 +1,5 @@
 /* ===========================================================================
-   LINK GREEN INTERNATIONAL — comportements de la maquette
+   LINK GREEN INTERNATIONAL · comportements de la maquette
    =========================================================================== */
 (function () {
   'use strict';
@@ -79,14 +79,14 @@
       if (!msg) return;
       msg.hidden = false;
       msg.textContent = form.dataset.stub === 'rdv'
-        ? 'Maquette : en production, ce bouton ouvre votre agenda et votre paiement en ligne — le tunnel de réservation actuel est conservé tel quel.'
+        ? 'Maquette : en production, ce bouton ouvre votre agenda et votre paiement en ligne&nbsp;: le tunnel de réservation actuel est conservé tel quel.'
         : 'Maquette : le formulaire n’est pas relié. En production, il arrive sur une adresse de votre domaine, pas sur une boîte gmail.';
       msg.setAttribute('role', 'status');
     });
   });
 
   /* =======================================================================
-     « Suis-je producteur au sens de la REP ? » — 3 questions
+     « Suis-je producteur au sens de la REP ? » · 3 questions
      ======================================================================= */
 
   var CAT = {
@@ -168,12 +168,12 @@
     ));
     out.push(item(
       'Déclaration des ventes et éco-contribution',
-      'Les quantités mises sur le marché français sont déclarées par période. C’est là que se logent la plupart des erreurs — et les régularisations qui coûtent cher.'
+      'Les quantités mises sur le marché français sont déclarées par période. C’est là que se logent la plupart des erreurs, et les régularisations qui coûtent cher.'
     ));
 
     if (pays === 'hors-ue') {
       out.push(item(
-        'Un mandataire établi en France — obligatoire',
+        'Un mandataire établi en France, obligatoire',
         'Sans établissement dans l’Union, vous ne pouvez pas vous enregistrer directement. C’est exactement le rôle que nous tenons : le mandat REP France.'
       ));
     } else if (pays === 'ue') {
@@ -191,7 +191,7 @@
     if (canal === 'marketplace') {
       out.push(item(
         'Votre place de marché contrôlera votre UIN',
-        'Amazon, Cdiscount et ManoMano vérifient l’enregistrement de leurs vendeurs. Sans numéro valide, les annonces sont suspendues — c’est la première raison pour laquelle on nous appelle en urgence.'
+        'Amazon, Cdiscount et ManoMano vérifient l’enregistrement de leurs vendeurs. Sans numéro valide, les annonces sont suspendues. C’est la première raison pour laquelle on nous appelle en urgence.'
       ));
     }
     if (canal === 'propre') {
@@ -204,7 +204,7 @@
     res.innerHTML =
       '<div class="qres__hd">' +
       '<h3>' + (pays === 'hors-ue'
-        ? 'Oui — et il vous faut un mandataire en France'
+        ? 'Oui, et il vous faut un mandataire en France'
         : 'Oui, vous êtes producteur au sens de la REP') + '</h3>' +
       '<p>Résultat établi sur trois réponses. Les quinze minutes de consultation servent à le confirmer sur votre catalogue réel.</p></div>' +
       '<div class="qres__body">' +

@@ -1,5 +1,5 @@
 /* ===========================================================================
-   LINK GREEN INTERNATIONAL — maquette de refonte
+   LINK GREEN INTERNATIONAL : maquette de refonte
    Direction artistique : « le flux ».
    Deux métiers, deux couleurs : vert forêt désaturé pour la conformité REP,
    terre cuite pour le sourcing Chine. Base neutre chaude, encre sombre.
@@ -23,12 +23,12 @@
   --rule:    #dcd4c5;
   --rule-2:  #ebe5da;
 
-  /* pôle conformité REP — France */
+  /* pôle conformité REP : France */
   --fr:      #2c6a4d;
   --fr-deep: #1d4c36;
   --fr-wash: #e3ede6;
 
-  /* pôle sourcing — Chine */
+  /* pôle sourcing : Chine */
   --cn:      #ad4a31;
   --cn-deep: #8a381f;
   --cn-wash: #f5e7e1;
